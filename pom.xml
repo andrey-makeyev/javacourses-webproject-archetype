@@ -5,7 +5,7 @@
     <artifactId>webproject</artifactId>
     <version>1.0</version>
     <name>Archetype - javacourses-archetype</name>
-    <url>http://maven.apache.org</url>
+    <url>https://github.com/dima-fedotovs/javacourses-webproject-archetype</url>
 
 
     <licenses>
@@ -17,6 +17,6 @@
     </licenses>
 
     <scm>
-        <url>https://svn.apache.org/viewvc/maven</url>
+        <url>https://github.com/dima-fedotovs/javacourses-webproject-archetype</url>
     </scm>
 </project>
