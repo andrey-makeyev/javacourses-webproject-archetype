@@ -6,8 +6,16 @@
     <version>1.0.0-SNAPSHOT</version>
     <name>javacourses-webproject-archetype</name>
     <description>Java Courses simple WEB project archetype</description>
-    <url>https://github.com/dima-fedotovs/javacourses-webproject-archetype</url>
+    <url>https://github.com/bug-guru/javacourses-webproject-archetype</url>
 
+    <developers>
+        <developer>
+            <name>Dimitrijs Fedotovs</name>
+            <email>dima@fedoto.ws</email>
+            <organization>developithecus SIA</organization>
+            <organizationUrl>https://www.facebook.com/developithecus</organizationUrl>
+        </developer>
+    </developers>
 
     <licenses>
         <license>
@@ -18,6 +26,8 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/dima-fedotovs/javacourses-webproject-archetype</url>
+        <connection>scm:git:git://github.com/bug-guru/javacourses-webproject-archetype.git</connection>
+        <developerConnection>scm:git:ssh://github.com/bug-guru/javacourses-webproject-archetype.git</developerConnection>
+        <url>https://github.com/bug-guru/javacourses-webproject-archetype</url>
     </scm>
 </project>
