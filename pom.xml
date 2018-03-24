@@ -8,6 +8,10 @@
     <description>Java Courses simple WEB project archetype</description>
     <url>https://github.com/bug-guru/javacourses-webproject-archetype</url>
 
+    <properties>
+        <site.path>/docs</site.path>
+    </properties>
+
     <developers>
         <developer>
             <name>Dimitrijs Fedotovs</name>
@@ -27,7 +31,46 @@
 
     <scm>
         <connection>scm:git:git://github.com/bug-guru/javacourses-webproject-archetype.git</connection>
-        <developerConnection>scm:git:ssh://github.com/bug-guru/javacourses-webproject-archetype.git</developerConnection>
+        <developerConnection>scm:git:ssh://github.com/bug-guru/javacourses-webproject-archetype.git
+        </developerConnection>
         <url>https://github.com/bug-guru/javacourses-webproject-archetype</url>
     </scm>
+    <distributionManagement>
+        <site>
+            <id>website</id>
+            <url>/home/dima/Temp/site</url>
+        </site>
+    </distributionManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <!-- Deploy the web site -->
+                <groupId>com.github.github</groupId>
+                <artifactId>site-maven-plugin</artifactId>
+                <version>0.12</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>site</goal>
+                        </goals>
+                        <!-- select the Maven phase in which the plugin will be executed -->
+                        <phase>site-deploy</phase>
+                        <configuration>
+                            <!-- Plugin configuration ges here -->
+
+                            <server>github</server>
+
+                            <!-- The commit message -->
+                            <message>Building site for my project</message>
+                            <!-- The location where the site is uploaded -->
+                            <path>${site.path}</path>
+                            <!-- Use merge or override the content -->
+                            <merge>true</merge>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
