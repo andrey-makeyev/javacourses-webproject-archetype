@@ -1,9 +1,9 @@
-package javacourses.boundary;
+package ${package}.boundary;
 
-import javacourses.control.EmailSender;
-import javacourses.control.UserControl;
-import javacourses.control.Util;
-import javacourses.entity.User;
+import ${package}.control.EmailSender;
+import ${package}.control.UserControl;
+import ${package}.control.Util;
+import ${package}.entity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,8 +16,6 @@ import java.util.Objects;
 
 /**
  * @author Dimitrijs Fedotovs <a href="http://www.bug.guru">www.bug.guru</a>
- * @version 1.1.0
- * @since 1.1.0
  */
 @ViewScoped
 @Named

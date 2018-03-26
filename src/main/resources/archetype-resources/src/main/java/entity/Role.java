@@ -1,4 +1,4 @@
-package javacourses.entity;
+package ${package}.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -6,8 +6,6 @@ import java.util.Objects;
 
 /**
  * @author Dimitrijs Fedotovs <a href="http://www.bug.guru">www.bug.guru</a>
- * @version 1.0
- * @since 1.0
  */
 @Entity
 @Table(name = "roles")

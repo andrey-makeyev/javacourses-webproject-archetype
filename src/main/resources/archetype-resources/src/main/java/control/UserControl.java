@@ -1,7 +1,7 @@
-package javacourses.control;
+package ${package}.control;
 
-import javacourses.entity.Role;
-import javacourses.entity.User;
+import ${package}.entity.Role;
+import ${package}.entity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,8 +17,6 @@ import java.util.Collections;
 
 /**
  * @author Dimitrijs Fedotovs <a href="http://www.bug.guru">www.bug.guru</a>
- * @version 1.0
- * @since 1.0
  */
 @Stateless
 public class UserControl {

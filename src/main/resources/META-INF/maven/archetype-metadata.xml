@@ -2,18 +2,27 @@
                       xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
                       xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
                       name="JavaCourses WEB Project Template" partial="false">
+<!--
     <requiredProperties>
         <requiredProperty key="package">
-            <defaultValue>javacourses</defaultValue>
+            <defaultValue>application</defaultValue>
         </requiredProperty>
     </requiredProperties>
+-->
 
     <fileSets>
         <fileSet filtered="true" packaged="true" encoding="UTF-8">
             <directory>src/main/java</directory>
             <includes>
-                <include>boundary/GreetingBoundary.java</include>
-                <include>entity/Greeting.java</include>
+                <include>boundary/CurrentUser.java</include>
+                <include>boundary/RegistrationForm.java</include>
+                <include>boundary/ResetPasswordForm.java</include>
+                <include>boundary/SignInForm.java</include>
+                <include>control/EmailSender.java</include>
+                <include>control/UserControl.java</include>
+                <include>control/Util.java</include>
+                <include>entity/Role.java</include>
+                <include>entity/User.java</include>
             </includes>
             <excludes/>
         </fileSet>
@@ -35,26 +44,42 @@
             <directory>src/main/webapp/WEB-INF</directory>
             <includes>
                 <include>jboss-web.xml</include>
+                <include>web.xml</include>
             </includes>
             <excludes/>
+        </fileSet>
+        <fileSet filtered="true" packaged="false" encoding="UTF-8">
+            <directory></directory>
+            <includes>
+                <include>README.md</include>
+            </includes>
         </fileSet>
         <fileSet filtered="false" packaged="false" encoding="UTF-8">
             <directory>src/main/webapp/WEB-INF</directory>
             <includes>
                 <include>beans.xml</include>
                 <include>faces-config.xml</include>
-                <include>web.xml</include>
+                <include>template.xhtml</include>
             </includes>
             <excludes/>
         </fileSet>
         <fileSet filtered="false" packaged="false" encoding="UTF-8">
             <directory>src/main/webapp</directory>
             <includes>
-                <include>template.xhtml</include>
                 <include>index.xhtml</include>
-                <include>greeting.xhtml</include>
+                <include>registration.xhtml</include>
+                <include>reset.xhtml</include>
+                <include>sign-in.xhtml</include>
+                <include>admin-space/index.xhtml</include>
+                <include>user-space/index.xhtml</include>
             </includes>
             <excludes/>
+        </fileSet>
+        <fileSet filtered="false" packaged="false" encoding="UTF-8">
+            <directory></directory>
+            <includes>
+                <include>.gitignore</include>
+            </includes>
         </fileSet>
     </fileSets>
 

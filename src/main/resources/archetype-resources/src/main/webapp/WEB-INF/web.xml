@@ -47,7 +47,7 @@
 
     <login-config>
         <auth-method>FORM</auth-method>
-        <realm-name>ArchetypeSecurityDomain</realm-name>
+        <realm-name>${artifactId}SecurityDomain</realm-name>
         <form-login-config>
             <form-login-page>/sign-in.xhtml</form-login-page>
             <form-error-page>/sign-in.xhtml</form-error-page>

@@ -1,12 +1,13 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>archetypetest</groupId>
-    <artifactId>archetypetest3</artifactId>
+    <groupId>${groupId}</groupId>
+    <artifactId>${artifactId}</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>archetypetest3</name>
+    <name>${groupId}:${artifactId}</name>
+    <description>Web Application with user management capabilities</description>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -35,7 +36,7 @@
     </dependencies>
 
     <build>
-        <finalName>archetypetest3</finalName>
+        <finalName>${artifactId}</finalName>
     </build>
 
 </project>
