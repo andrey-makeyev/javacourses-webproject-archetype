@@ -1,0 +1,3 @@
+# javacourses-webproject-archetype
+
+testing
